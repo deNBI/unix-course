@@ -45,8 +45,6 @@ Unix extends the power of commands by using special flags or *switches*. Switche
 
 Our main objective for this tutorial is
 
-<details>
-    <summary>Click me to collapse/fold.</summary>
-    These details will remain hidden until expanded.
-    The command is `rmdir`.
-</details>
+<details><summary>Show solution</summary><pre><code>
+rm -r mydir
+</code></pre></details>
