@@ -33,18 +33,39 @@ Unix extends the power of commands by using special flags or *switches*. Switche
 | `rmdir`             | remove an empty directory                                    |
 | `chmod`             | change mode (security permissions) of file or directory      |
 | &#10551; `ugo+-rwx` | user (owner), group, other (world), add, remove, read, write, execute |
-| `..`                | parent directory                                             |
-| `.`                 | current directory                                            |
 | `*`                 | wildcard representing any combination of characters          |
+| **Places** |  |
 | `~`                 | your home directory                                          |
+| `.`                 | current directory                                            |
+| `..`                | parent directory                                             |
+| **Pipes** |  |
 | `>`                 | send output to a file                                        |
 | `>>`                | append (add) output to a file                                |
 | `\|`                 | pipe output from one command as input to another             |
 
 ## Tutorial
 
-Our main objective for this tutorial is
+During this tutorial we will use the commands above to run some very basic bioinformatic analyses.
 
-<details><summary>Show solution</summary><pre><code>
-rm -r mydir
+### 01 - Accessing the Virtual Machine
+
+TODO
+
+### 02 - Opening a terminal window
+
+TODO
+
+### 03 - Creating a directory to work in
+
+1. Please find out your current directory. (1 command)
+2. If your current directory is not your home directory, please move to it. (1 command)
+3. Now create a directory called `first_analysis` and enter the new directory. (2 commands)
+
+<details><summary><u>Show solution</u></summary><pre><code>
+pwd
+cd ~
+mkdir first_analysis
+cd first_analysis
 </code></pre></details>
+
+### 04 - 
