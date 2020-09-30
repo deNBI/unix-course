@@ -41,5 +41,12 @@ Unix extends the power of commands by using special flags or *switches*. Switche
 | `>>`                | append (add) output to a file                                |
 | `\|`                 | pipe output from one command as input to another             |
 
-## Introduction
+## Tutorial
 
+Our main objective for this tutorial is
+
+<details>
+    <summary>Click me to collapse/fold.</summary>
+    These details will remain hidden until expanded.
+    The command is `rmdir`.
+</details>
