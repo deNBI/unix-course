@@ -6,6 +6,8 @@ Unix commands are strings of characters typed in at the keyboard. To  run a comm
 
 Unix extends the power of commands by using special flags or *switches*. Switches are usually preceded with a dash (`-`).
 
+TODO: explain command parameters e.g. `cd first_analysis`
+
 ## List of commands
 
 | Command             | Description                                                  |
@@ -45,7 +47,8 @@ Unix extends the power of commands by using special flags or *switches*. Switche
 
 ## Tutorial
 
-During this tutorial we will use the commands above to run some very basic bioinformatic analyses.
+During this tutorial you will use the commands above to run some basic bioinformatic analyses.
+Your task is to identify the correct commands to use and execute them. Feel free to experiment. Take a look at the solutions if necessary.
 
 ### 01 - Accessing the Virtual Machine
 
