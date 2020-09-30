@@ -48,7 +48,7 @@ TODO: explain command parameters e.g. `cd first_analysis`
 ## Tutorial
 
 During this tutorial you will use the commands above to run some basic bioinformatic analyses.
-Your task is to identify the correct commands to use and execute them. Feel free to experiment. Take a look at the solutions if necessary.
+Your task is to identify the correct commands and execute them. Feel free to experiment. Take a look at the solutions if necessary.
 
 ### 01 - Accessing the Virtual Machine
 
