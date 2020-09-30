@@ -39,7 +39,7 @@ Unix extends the power of commands by using special flags or *switches*. Switche
 | `~`                 | your home directory                                          |
 | `>`                 | send output to a file                                        |
 | `>>`                | append (add) output to a file                                |
-| `|`                 | pipe output from one command as input to another             |
+| `\|`                 | pipe output from one command as input to another             |
 
 ## Introduction
 
