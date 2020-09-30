@@ -72,3 +72,11 @@ cd first_analysis
 </code></pre></details>
 
 ### 04 - 
+
+
+
+
+
+TODO: create Go binary that calculates PI
+
+TODO: user copies binary from shared dir to home, inspects it (`file`), makes it executable, runs it, pipes output to file, inspects file, ...
