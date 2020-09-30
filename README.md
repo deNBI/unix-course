@@ -61,7 +61,7 @@ TODO
 2. If your current directory is not your home directory, please move to it. (1 command)
 3. Now create a directory called `first_analysis` and enter the new directory. (2 commands)
 
-<details><summary><u>Show solution</u></summary><pre><code>
+<details><summary>Show solution</summary><pre><code>
 pwd
 cd ~
 mkdir first_analysis
