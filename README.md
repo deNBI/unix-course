@@ -110,7 +110,7 @@ tail -f pi_results.txt
 # Ctrl+c
 </code></pre></details>
 
-### 06 - Inspect and kill a running program
+### 06 - Inspecting and killing a running program
 
 
 
@@ -128,7 +128,7 @@ ls -lh
 df -h
 </code></pre></details>
 
-### 07 - Edit a file (the results file?)
+### 07 - Editing a file (the results file?)
 
 TODO
 
