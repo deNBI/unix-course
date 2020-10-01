@@ -1,11 +1,11 @@
 # Unix course – Introduction to basic Unix commands
 
-On Unix, every user has a unique user name. When they log on to the system, they are placed in a home directory, which is a portion of the disk space reserved just for them. When you log onto a Unix system, your main interface to the system is  called the Unix Shell. This is the program that presents you with the dollar sign (`$`) prompt. This prompt means that the shell is ready to accept your typed commands. It is often preceded by the user name as well as the current directory.
+On Unix, every user has a unique user name. When they log onto the system, they are placed in a home directory, which is a portion of the disk space reserved just for them. When you log onto a Unix system, your main interface to the system is  called the Unix Shell. This is the program that presents you with the dollar sign (`$`) prompt. This prompt means that the shell is ready to accept your typed commands. It is often preceded by the user name as well as the current directory.
 
 Unix commands are strings of characters typed in at the keyboard. To  run a command, you just type it in and press the *Enter* key. We will look at several of the most common commands below.
-Commands often have _parameters_, e. g. a file to work on. Theses are typed in after the command separated by spaces, e. g. `cd pi_calculation`.
+Commands often have _parameters_, e. g. a file to work on. Theses are typed in after the command and are separated by spaces, e. g. `less pi_results.txt`.
 
-In addition, Unix extends the power of commands by using special flags or *switches*. Switches are usually preceded with a dash (`-`), e. g. `ls -l`.
+In addition, Unix extends the power of commands by using special flags or *switches*. Switches are usually preceded with a dash (`-`), e. g. `ls -lh`.
 
 ## List of commands
 
@@ -13,7 +13,8 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | ------------------- | ------------------------------------------------------------ |
 | `pwd`               | print current (working) directory            |
 | `ls`                | list contents of the current directory                       |
-| &#10551; `-lh`     | **l**ong (detailed) listing with **h**uman readable numbers |
+| &#10551; `-l`    | **l**ong (detailed) listing |
+| &#10551; `-h` | with **h**uman readable numbers |
 | `cd`                | change to another directory                                  |
 | `mkdir`             | make a new directory                                         |
 | `mv`                | move or rename a file or directory                           |
@@ -27,6 +28,7 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `grep`              | list text lines containing particular characters             |
 | `cat`               | concatenate (combine) two or more files                      |
 | `df`                | show disk free information                                   |
+| &#10551; `-h` | with **h**uman readable numbers |
 | `find`              | find files in a directory tree                               |
 | `man`               | display program manual for a command                         |
 | `ps -x`         | list one's own running programs / processes (e**x**tended list) |
@@ -50,7 +52,7 @@ In addition, Unix extends the power of commands by using special flags or *switc
 
 ## Tutorial
 
-During this tutorial you will use the commands above. Your task is to identify the correct commands and execute them. Feel free to experiment. Take a look at the solutions if necessary.
+During this tutorial you will use the commands above. Your task is to identify the correct commands and execute them. Feel free to experiment. Take a look at the solution if necessary.
 
 ### 01 - Accessing the Virtual Machine
 
@@ -123,7 +125,7 @@ ps -x
 kill 12345
 ps -x     # or look at the first terminal
 ls -lh
-df
+df -h
 </code></pre></details>
 
 ### 07 - Edit a file (the results file?)
