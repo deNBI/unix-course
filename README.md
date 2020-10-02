@@ -159,15 +159,18 @@ Let's extract adverbs from a list of English words available inside `/usr/share/
    
    ```
    
-4. Repeat the same for the words ending in _…ously_ as well as _…ably_ and save them to their corresponding files. *(2 commands)*
+4. Take a look at the contents of `fully.txt`. _(1 command)_
 
-5. List the word counts of all three files. *(1 command)*
+5. Repeat the same for the words ending in _…ously_ as well as _…ably_ and save them to their corresponding files. *(2 commands)*
+
+6. List the word counts of all three files. *(1 command)*
 
 <details><summary>Show solution</summary><pre><code>
 cd ~
 mkdir fun_with_words
 cd fun_with_words
 grep "fully$" /usr/share/dict/words > fully.txt
+less fully.txt
 grep "ously$" /usr/share/dict/words > ously.txt
 grep "ably$" /usr/share/dict/words > ably.txt
 wc *.txt
@@ -186,7 +189,7 @@ less adverbs.sorted.txt
 
 ### 09 - Editing and saving text files
 
-TODO: `mv`, `echo`,`find`,`..`,`|`
+TODO: `mv`, `echo`,`find`,`..`,`|` , (`vim`?)
 
 ### 10 - Cleaning up
 
