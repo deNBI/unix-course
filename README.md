@@ -64,6 +64,8 @@ TODO
 
 ### 03 - Creating a directory to work in
 
+<u>Tasks:</u>
+
 1. Open the manual page of the command `pwd` by entering `man pwd`.
 2. Find out your current (working) directory. (1 command)
 3. If your current directory is not your home directory, please move to it. (1 command)
@@ -82,6 +84,8 @@ pwd
 
 A simple program that (slowly) approximates the number pi is available as a file at `/opt/calculate_pi`.
 
+<u>Tasks:</u>
+
 1. Please copy this program into your current directory. (1 command)
 2. Inspect the file you just copied to get information about its file type. (1 command)
 3. Please make the file executable (for you as the owner only). (1 command)
@@ -99,6 +103,8 @@ chmod u+x calculate_pi
 
 We would like to save the results of the pi calculation program to a file instead of just displaying them on the screen.
 
+<u>Tasks:</u>
+
 1. Please run the pi executable again but this time send its output to a file called `pi_results.txt` in the same directory. (1 command)
 2. Open a second terminal and enter a command that allows you to watch the output lines being written to the results file. **Note:** Bear in mind that a new terminal always starts in your home directory. (2 commands)
 3. Stop following the results file. (1 key combination)
@@ -110,12 +116,14 @@ tail -f pi_results.txt
 # Ctrl+c
 </code></pre></details>
 
-### 06 - Inspecting and killing a running program
+### 06 - Inspecting and terminating a running program
 
+The pi approximation will probably run for about an hour but we would like to terminate it earlier.
 
+<u>Tasks:</u>
 
 1. List your own running programs. (1 command)
-2. Use the process ID (PID) of the still running pi calculation to kill it. The PID is in the first column of the program list. (1 command)
+2. Use the process ID (PID) of the still running pi calculation to terminate it. The PID is in the first column of the program list. (1 command)
 3. Verify that the pi calculation has stopped. (1 command or action)
 4. Check the file size of the results file that the pi calculation has generated. (1 command)
 5. Check the free disk space available. (1 command)
