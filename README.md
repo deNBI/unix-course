@@ -175,11 +175,18 @@ wc *.txt
 
 ### 08 - Processing the extracted data
 
-TODO
+1. Concatenate the contents of the three files from the previous section into a single file called `adverbs.sorted.txt`. Sort the lines alphabetically before saving. _(2 commands with a pipe in between)_
+2. Take a look at the contents of the sorted file. _(1 command)_
+3. TODO
+
+<details><summary>Show solution</summary><pre><code>
+cat *.txt | sort > adverbs.sorted.txt
+less adverbs.sorted.txt
+</code></pre></details>
 
 ### 09 - Editing and saving text files
 
-TODO: `mv`, `echo`,`cat`,`find`,`..`,`|`
+TODO: `mv`, `echo`,`find`,`..`,`|`
 
 ### 10 - Cleaning up
 
