@@ -56,15 +56,41 @@ In addition, Unix extends the power of commands by using special flags or *switc
 
 ## Tutorial
 
-During this tutorial you will use many of the commands above. Your task is to identify the correct commands and execute them. Feel free to experiment. Take a look at the solution if necessary.
+During this tutorial you will use many of the commands above. Your task is to identify 
+the correct commands and execute them. Feel free to experiment. Take a look at the 
+solution if necessary.
 
-### 01 - Accessing the Virtual Machine
+This tutorial is part of the [3rd de.NBI Cloud User Meeting (CLUM) 2020](https://cloud.denbi.de/3rd-de-nbi-cloud-user-meeting/).
+The first two section (01 and 02) describes how to access the CLUM 2020 environment for this tutorial. As minimum 
+requirement you just need a browser and an active elixir account. 
 
-TODO
+### 01 - Accessing the Distance Learning Platform 
+
+Each participant gets access to a prepared virtual machine running the Web IDE Theia. Theia-IDE provides a 
+(simplified) file manager, an editor and a terminal. 
+
+#### Get your credentials
+Go to [http://cloud.denbi.de/vault/](). Elixir-AAI (SSO) is used to authenticate you against this service.
+
+ToDo -> add 
+
+#### Access Theia-IDE
+
+Go to the de.NBI Cloud powered [Distance Learning Platform](https://dl.bi.denbi.de/login_clum2020)
+for the Cloud User Meeting 2020 and login with your credentials.
+
+After a successfull login the Theia-IDE screen appears. The IDE is normally divided into 3 sections. 
+
+On left there is an file browser, on upper right - normally the main window - there is the place for teh editor pane and on 
+lower right one or more terminal panes are supported. For the current tuto
 
 ### 02 - Opening a terminal window
 
-TODO
+If not yet open go to -> _Terminal_ -> _new Terminal_ to open a new terminal.
+
+![Opening a terminal window](images/Terminal.png)
+
+For some parts of the tutorial you need more than terminal open at the same time.
 
 ### 03 - Creating a directory to work in
 
