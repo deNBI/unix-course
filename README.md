@@ -61,28 +61,29 @@ the correct commands and execute them. Feel free to experiment. Take a look at t
 solution if necessary.
 
 This tutorial is part of the [3rd de.NBI Cloud User Meeting (CLUM) 2020](https://cloud.denbi.de/3rd-de-nbi-cloud-user-meeting/).
-The first two section (01 and 02) describes how to access the CLUM 2020 environment for this tutorial. As minimum 
-requirement you just need a browser and an active elixir account. 
+The first two sections (01 and 02) describe how to access the CLUM 2020 environment for this tutorial.
+Participants need a web browser and an active ELIXIR account. 
 
-### 01 - Accessing the Distance Learning Platform 
+### 01 - Accessing the Distance Learning Platform
 
-Each participant gets access to a prepared virtual machine running the Web IDE Theia. Theia-IDE provides a 
-(simplified) file manager, an editor and a terminal. 
+When accessing a Unix system running as a virtual machine in the cloud one would normally log into
+it via SSH and would be getting presented with a terminal.
+For the sake of this tutorial the access route to the terminal is via web browser.
+Every participant has access to a prepared virtual machine running a web-based development environment called Theia IDE.
 
-#### Get your credentials
+#### Getting your credentials
 Go to [http://cloud.denbi.de/vault/](). Elixir-AAI (SSO) is used to authenticate you against this service.
 
 ToDo -> add 
 
-#### Access Theia-IDE
+#### Accessing Theia IDE
 
-Go to the de.NBI Cloud powered [Distance Learning Platform](https://dl.bi.denbi.de/login_clum2020)
-for the Cloud User Meeting 2020 and login with your credentials.
+Please open the de.NBI Cloud powered [Distance Learning Platform](https://dl.bi.denbi.de/login_clum2020)
+for the Cloud User Meeting 2020 and log in with your credentials.
 
-After a successfull login the Theia-IDE screen appears. The IDE is normally divided into 3 sections. 
-
-On left there is an file browser, on upper right - normally the main window - there is the place for teh editor pane and on 
-lower right one or more terminal panes are supported. For the current tuto
+After successful login the Theia IDE screen appears. The screen is usually divided into 3 sections:
+Editor pane in the center, file browser on the left, terminal at the bottom.
+This tutorial will primarily focus on the use of the terminal.
 
 ### 02 - Opening a terminal window
 
@@ -90,7 +91,7 @@ If not yet open go to -> _Terminal_ -> _new Terminal_ to open a new terminal.
 
 ![Opening a terminal window](images/Terminal.png)
 
-For some parts of the tutorial you need more than terminal open at the same time.
+It is possible to have more than one terminal open at the same time.
 
 ### 03 - Creating a directory to work in
 
