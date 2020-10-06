@@ -246,7 +246,7 @@ cd ~
 wget "https://tiny.cc/sars-cov-2"
 less sars-cov-2
 gzip sars-cov-2
-ls -l sars-cov-2
+ls -l sars-cov-2.gz
 </code></pre></details>
 
 ### 10 - Cleaning up
