@@ -113,8 +113,8 @@ It is possible to have more than one terminal open at the same time.
 <details><summary>Show solution</summary><pre><code>
 pwd
 cd ~
-mkdir first_analysis
-cd first_analysis
+mkdir pi_calculation
+cd pi_calculation
 pwd
 </code></pre></details>
 
