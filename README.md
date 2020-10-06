@@ -79,13 +79,15 @@ it via SSH and would be getting presented with a terminal.
 For the sake of this tutorial the access route to the terminal is via web browser.
 Every participant has access to a prepared virtual machine running a web-based development environment called Theia IDE.
 
-**Getting your credentials**
+#### Getting your credentials
+{:.no_toc}
 
 We use [de.NBI vault](https://cloud.denbi.de/vault/) to distribute user credentials.
 There is an [excellent tutorial](https://cloud.denbi.de/wiki/portal/vault_user/) in the de.NBI cloud wiki that
 describes the usage of vault.
 
-**Accessing Theia IDE**
+#### Accessing Theia IDE
+{:.no_toc}
 
 Please open the de.NBI Cloud powered [Distance Learning Platform](https://dl.bi.denbi.de/login_clum2020)
 for the Cloud User Meeting 2020 and log in with your credentials.
@@ -279,6 +281,7 @@ If something is unclear or if you have further questions, do not hesitate to ask
 ---
 
 ## Remarks for the presenter
+{:.no_toc}
 
 Please make sure that 
 
