@@ -266,15 +266,12 @@ rm -r pi_calculation
 ls
 </code></pre></details>
 
+
+### 11 - Time for questions
+
+If something is unclear or if you have further questions, do not hesitate to ask us.
+
 ---
-
-### (Optional) - Editing and saving text files inside a terminal
-
-TODO: `vim`
-
-
-
-
 
 # Remarks for the presenter
 
