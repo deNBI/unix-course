@@ -76,9 +76,9 @@ For the sake of this tutorial the access route to the terminal is via web browse
 Every participant has access to a prepared virtual machine running a web-based development environment called Theia IDE.
 
 #### Getting your credentials
-Go to [http://cloud.denbi.de/vault/](). Elixir-AAI (SSO) is used to authenticate you against this service.
-
-ToDo -> add 
+We use [de.NBI vault](https://cloud.denbi.de/vault/) to distribute user credentials.
+There is an [excellent tutorial](https://cloud.denbi.de/wiki/portal/vault_user/) in the de.NBI cloud wiki that
+describes the usage of vault.
 
 #### Accessing Theia IDE
 
@@ -266,15 +266,12 @@ rm -r pi_calculation
 ls
 </code></pre></details>
 
+
+### 11 - Time for questions
+
+If something is unclear or if you have further questions, do not hesitate to ask us.
+
 ---
-
-### (Optional) - Editing and saving text files inside a terminal
-
-TODO: `vim`
-
-
-
-
 
 # Remarks for the presenter
 
