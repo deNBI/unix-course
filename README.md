@@ -2,6 +2,8 @@
 
 # Unix course – Introduction to basic Unix commands
 
+[[_TOC_]]
+
 On Unix, every user has a unique user name. When they log onto the system, they are placed in a home directory, which is a portion of the disk space reserved just for them. When you log onto a Unix system, your main interface to the system is  called the Unix Shell. This is the program that presents you with the dollar sign (`$`) prompt. This prompt means that the shell is ready to accept your typed commands. It is often preceded by the user name as well as the current directory.
 
 Unix commands are strings of characters typed in at the keyboard. To  run a command, you just type it in and press the *Enter* key. We will look at several of the most common commands below.
@@ -59,6 +61,8 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `\|`                 | pipe output from one command as input to another             |
 
 ## Tutorial
+
+[[_TOC_]]
 
 During this tutorial you will use many of the **commands above**. Your task is to **identify** 
 **the correct commands and execute them**. Feel free to experiment. Take a look at the 
