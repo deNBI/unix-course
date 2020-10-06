@@ -252,7 +252,7 @@ ls -l sars-cov-2.gz
 ### 10 - Cleaning up
 
 1. Please enter your home and list its contents. *(2 commands)*
-2. Please list the contents of the directory `fun_with_words` without entering it. *(1 command)*
+2. Please list the contents of the directory `fun_with_words` without moving into it. *(1 command)*
 3. Now, delete all the files inside the directory `fun_with_words`. *(1 command)*
 4. Delete the directory itself. *(1 command)*
 5. The directory `pi_calculation` has to be cleaned up as well. This time, delete directory and contents in one go. *(1 command)*
