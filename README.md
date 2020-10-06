@@ -62,8 +62,6 @@ In addition, Unix extends the power of commands by using special flags or *switc
 
 ## Tutorial
 
-[[_TOC_]]
-
 During this tutorial you will use many of the **commands above**. Your task is to **identify** 
 **the correct commands and execute them**. Feel free to experiment. Take a look at the 
 solution if absolutely necessary.
@@ -272,7 +270,7 @@ ls
 </code></pre></details>
 
 
-### Questions and Discussion
+### Questions and discussion
 
 If something is unclear or if you have further questions, do not hesitate to ask us.
 
