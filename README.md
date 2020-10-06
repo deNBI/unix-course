@@ -85,6 +85,9 @@ After successful login the Theia IDE screen appears. The screen is usually divid
 Editor pane in the center, file browser on the left, terminal at the bottom.
 This tutorial will primarily focus on the use of the terminal.
 
+> **Note:** Access to your own private virtual machine works different from what is used here. You would usually run an SSH client to connect to the machine using a key file and would then be presented with a single terminal command prompt, e. g.:
+> `ssh -i ~/.ssh/mykeyfile ubuntu@myprivatevm.example.com`
+
 ### 02 - Opening a terminal window
 
 If not yet open go to -> _Terminal_ -> _new Terminal_ to open a new terminal.
@@ -214,13 +217,21 @@ cat *.txt | sort > adverbs.sorted.txt
 less adverbs.sorted.txt
 </code></pre></details>
 
-### 09 - Editing and saving text files
+### 09 - Downloading files from the web
 
-TODO: `mv`, `echo`,`find`,`..`,`|` , (`vim`?)
+TODO: `wget`/`curl`, `tar -xf`/`gunzip`?
 
 ### 10 - Cleaning up
 
 TODO: `rm`, `rmdir`
+
+---
+
+### (Optional) - Editing and saving text files inside a terminal
+
+TODO: `mv`, `echo`,`find`,`..`,`|` , (`vim`?)
+
+
 
 
 
