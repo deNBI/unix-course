@@ -5,7 +5,7 @@
 On Unix, every user has a unique user name. When they log onto the system, they are placed in a home directory, which is a portion of the disk space reserved just for them. When you log onto a Unix system, your main interface to the system is  called the Unix Shell. This is the program that presents you with the dollar sign (`$`) prompt. This prompt means that the shell is ready to accept your typed commands. It is often preceded by the user name as well as the current directory.
 
 Unix commands are strings of characters typed in at the keyboard. To  run a command, you just type it in and press the *Enter* key. We will look at several of the most common commands below.
-Commands often have _parameters_, e. g. a file to work on. Theses are typed in after the command and are separated by spaces, e. g. `less pi_results.txt`.
+Commands often have _parameters_, e. g. a file to work on. Theses are typed in after the command and are separated by spaces, e. g. `less pi_results.txt` opens the file `pi_results.txt` for reading.
 
 In addition, Unix extends the power of commands by using special flags or *switches*. Switches are usually preceded with a dash (`-`), e. g. `ls -lh`.
 
@@ -43,8 +43,9 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `rmdir`             | remove an empty directory                                    |
 | `chmod`             | change mode (security permissions) of file or directory      |
 | &#10551; `ugo+-rwx` | **u**ser (owner), **g**roup, **o**ther (world), add(**+**), remove(**-**), **r**ead, **w**rite, **e**xecute |
-| `./myprogram` | run the executable `myprogram` |
-| `wget` | network downloader (download files from the Web) |
+| `./myprogram` | run the local executable file `myprogram` |
+| `sed 's/ab/cd'` | transform text, e. g. replace all occurrences of 'ab' with 'cd' |
+| `wget` | network downloader (downloads files from the Web) |
 | `gzip` | compress a file |
 | `gunzip` | uncompress a file |
 | `*`                 | wildcard representing any combination of characters          |
@@ -59,9 +60,9 @@ In addition, Unix extends the power of commands by using special flags or *switc
 
 ## Tutorial
 
-During this tutorial you will use many of the commands above. Your task is to identify 
-the correct commands and execute them. Feel free to experiment. Take a look at the 
-solution if necessary.
+During this tutorial you will use many of the **commands above**. Your task is to **identify** 
+**the correct commands and execute them**. Feel free to experiment. Take a look at the 
+solution if absolutely necessary.
 
 This tutorial is part of the [3rd de.NBI Cloud User Meeting (CLUM) 2020](https://cloud.denbi.de/3rd-de-nbi-cloud-user-meeting/).
 The first two sections (01 and 02) describe how to access the CLUM 2020 environment for this tutorial.
@@ -196,7 +197,7 @@ Let's extract adverbs from a list of English words available inside `/usr/share/
 
 5. Repeat the same for the words ending in _…ously_ as well as _…ably_ and save them to their corresponding files. *(2 commands)*
 
-6. List the word counts of all three files. *(1 command)*
+6. Calculate the word counts of all three files. *(1 command)*
 
 <details><summary>Show solution</summary><pre><code>
 cd ~
@@ -206,18 +207,28 @@ grep "fully$" /usr/share/dict/words > fully.txt
 less fully.txt
 grep "ously$" /usr/share/dict/words > ously.txt
 grep "ably$" /usr/share/dict/words > ably.txt
-wc *.txt
+wc ably.txt fully.txt ously.txt
 </code></pre></details>
 
 ### 08 - Processing the extracted data
 
-1. Concatenate the contents of the three files from the previous section into a single file called `adverbs.sorted.txt`. Sort the lines alphabetically before saving. _(2 commands with a pipe in between)_
-2. Take a look at the contents of the sorted file. _(1 command)_
-3. TODO
+1. Convert all the adverbs inside the three files from the previous section into adjectives. Name the resulting files `able.txt`, `ful.txt` and `ous.txt` _(3 commands)_
+
+    | adverb | adjective |
+    | ------ | --------- |
+    | …ably  | …able     |
+    | …fully | …ful      |
+    | …ously | …ous      |
+
+1. Concatenate the contents of `able.txt`, `ful.txt` and `ous.txt` into a single file called `adjectives.sorted.txt`. Sort the lines alphabetically before saving. _(2 commands with a pipe in between)_
+2. Take a look at the results. _(1 command)_
 
 <details><summary>Show solution</summary><pre><code>
-cat *.txt | sort > adverbs.sorted.txt
-less adverbs.sorted.txt
+sed 's/ably/able/' ably.txt > able.txt
+sed 's/fully/ful/' fully.txt > ful.txt
+sed 's/ously/ous/' ously.txt > ous.txt
+cat able.txt ful.txt ous.txt | sort > adjectives.sorted.txt
+less adjectives.sorted.txt
 </code></pre></details>
 
 ### 09 - Downloading and compressing files
