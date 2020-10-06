@@ -23,7 +23,7 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `cp`                | copy file                                                    |
 | &#10551; `-r`       | copy directory tree (**r**ecursively)                        |
 | `file` | determine file type |
-| `echo`              | display a line of text                                       |
+| `echo`              | print a line of text                                   |
 | `less`              | display contents of a file (press q to quit)                 |
 | `tail` | output the last part of a file |
 | &#10551; `-f` | **f**ollow appended data as the file grows |
@@ -44,6 +44,9 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `chmod`             | change mode (security permissions) of file or directory      |
 | &#10551; `ugo+-rwx` | **u**ser (owner), **g**roup, **o**ther (world), add(**+**), remove(**-**), **r**ead, **w**rite, **e**xecute |
 | `./myprogram` | run the executable `myprogram` |
+| `wget` | network downloader (download files from the Web) |
+| `gzip` | compress a file |
+| `gunzip` | uncompress a file |
 | `*`                 | wildcard representing any combination of characters          |
 | **Places** |  |
 | `~`                 | your home directory                                          |
@@ -217,19 +220,46 @@ cat *.txt | sort > adverbs.sorted.txt
 less adverbs.sorted.txt
 </code></pre></details>
 
-### 09 - Downloading files from the web
+### 09 - Downloading and compressing files
 
-TODO: `wget`/`curl`, `tar -xf`/`gunzip`?
+1. Please move to your home directory. *(1 command)*
+2. Now, download the file at https://tiny.cc/sars-cov-2  to the current directory using a network downloader. *(1 command)*
+3. Take a look at the contents of the file. Notice that the second half of the file contains a 29903 base pair long DNA sequence. *(1 command)*
+4. The downloaded file is an uncompressed text file of 77 Kilobytes in size. Please apply compression to the file so that it takes less disk space and check the effectiveness of the compression. *(2 commands)*
+
+<details><summary>Show solution</summary><pre><code>
+cd ~
+wget "https://tiny.cc/sars-cov-2"
+less sars-cov-2
+gzip sars-cov-2
+ls -l sars-cov-2
+</code></pre></details>
 
 ### 10 - Cleaning up
 
-TODO: `rm`, `rmdir`
+1. Please enter your home and list its contents. *(2 commands)*
+2. Please list the contents of the directory `fun_with_words` without entering it. *(1 command)*
+3. Now, delete all the files inside the directory `fun_with_words`. *(1 command)*
+4. Delete the directory itself. *(1 command)*
+5. The directory `pi_calculation` has to be cleaned up as well. This time, delete directory and contents in one go. *(1 command)*
+6. Verify that both directories have been removed. *(1 command)*
+7. That's it! Congratulations! You have mastered the Unix command-line essentials!
+
+<details><summary>Show solution</summary><pre><code>
+cd ~
+ls
+ls fun_with_words
+rm fun_with_words/*
+rmdir fun_with_words
+rm -r pi_calculation
+ls
+</code></pre></details>
 
 ---
 
 ### (Optional) - Editing and saving text files inside a terminal
 
-TODO: `mv`, `echo`,`find`,`..`,`|` , (`vim`?)
+TODO: `vim`
 
 
 
