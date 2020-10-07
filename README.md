@@ -60,6 +60,8 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `>>`                | append (add) output to a file                                |
 | `\|`                 | pipe output from one command as input to another             |
 
+Download as [PDF](cheatsheet.pdf) or separate [MarkDown](cheatsheet.md).
+
 ## Tutorial
 
 During this tutorial you will use many of the **commands above**. Your task is to **identify** 
