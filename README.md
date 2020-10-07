@@ -85,8 +85,8 @@ describes the usage of vault.
 
 **Accessing Theia IDE**
 
-Please open the de.NBI Cloud powered [Distance Learning Platform](https://dl.bi.denbi.de/login_clum2020)
-for the Cloud User Meeting 2020 and log in with your credentials.
+This workshop is powered by our [Distance Learning Platform](https://dl.bi.denbi.de/). You must use the following URL
+`https://dl.bi.denbi.de/clum2020_<ID>/` and your credentials to login. **Replace `<ID>` with your id, do not forget the closing `/`.**
 
 After successful login the Theia IDE screen appears. The screen is usually divided into 3 sections:
 Editor pane in the center, file browser on the left, terminal at the bottom.
