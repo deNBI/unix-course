@@ -68,33 +68,27 @@ During this tutorial you will use many of the **commands above**. Your task is t
 **the correct commands and execute them**. Feel free to experiment. Take a look at the 
 solution if absolutely necessary.
 
-This tutorial is part of the [3rd de.NBI Cloud User Meeting (CLUM) 2020](https://cloud.denbi.de/3rd-de-nbi-cloud-user-meeting/).
-The first two sections (01 and 02) describe how to access the CLUM 2020 environment for this tutorial.
+This tutorial is based on the [tutorial](https://gitlab.ub.uni-bielefeld.de/denbi/unix-course) that was created by the de.NBI Cloud Bielefeld administrators.
+The first two sections (01 and 02) describe how to access the CLUM 2021 environment for this tutorial.
 Participants need a web browser and an active ELIXIR account. 
 
-### 01 - Accessing the Distance Learning Platform
+### 01 - Accessing SimpleVM
 
 When accessing a Unix system running as a virtual machine in the cloud one would normally log into
 it via SSH and would be getting presented with a terminal.
 For the sake of this tutorial the access route to the terminal is via web browser.
 Every participant has access to a prepared virtual machine running a web-based development environment called Theia IDE.
 
-**Getting your credentials**
-
-We use [de.NBI vault](https://cloud.denbi.de/vault/) to distribute user credentials.
-There is an [excellent tutorial](https://cloud.denbi.de/wiki/portal/vault_user/) in the de.NBI cloud wiki that
-describes the usage of vault.
-
 **Accessing Theia IDE**
 
-This workshop is powered by our [Distance Learning Platform](https://dl.bi.denbi.de/). You must use the following URL
-`https://dl.bi.denbi.de/clum2020_<ID>/` and your credentials to login. **Replace `<ID>` with your id, do not forget the closing `/`.**
+This workshop is powered by [SimpleVM](https://cloud.denbi.de/simplevm/).
+Every participant should have received a mail containing the actual link to their VM.
 
 After successful login the Theia IDE screen appears. The screen is usually divided into 3 sections:
 Editor pane in the center, file browser on the left, terminal at the bottom.
 This tutorial will primarily focus on the use of the terminal.
 
-> **Note:** Access to your own private virtual machine works different from what is used here. You would usually run an SSH client to connect to the machine using a key file and would then be presented with a single terminal command prompt, e. g.:
+> **Note:** Access to your own private virtual machine works different from what is used here. You would usually run an SSH client to connect to the machine using a key file and would then be presented with a single terminal command prompt, e.g.:
 > `ssh -i ~/.ssh/mykeyfile ubuntu@myprivatevm.example.com`
 
 ### 02 - Opening a terminal window
