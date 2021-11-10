@@ -233,13 +233,13 @@ less adjectives.sorted.txt
 ### 09 - Downloading and compressing files
 
 1. Please move to your home directory. *(1 command)*
-2. Now, download the file at https://tiny.cc/sars-cov-2  to the current directory using a network downloader. *(1 command)*
-3. Take a look at the contents of the file. Notice that the second half of the file contains a 29903 base pair long DNA sequence. *(1 command)*
+2. Now, download the file at https://tinyurl.com/sars-cov-2-seq to the current directory using a network downloader. *(1 command)*
+3. Take a look at the contents of the file. *(1 command)*
 4. The downloaded file is an uncompressed text file of 77 Kilobytes in size. Please apply compression to the file so that it takes less disk space and check the effectiveness of the compression. *(2 commands)*
 
 <details><summary>Show solution</summary><pre><code>
 cd ~
-wget "https://tiny.cc/sars-cov-2"
+wget "https://tinyurl.com/sars-cov-2-seq"
 less sars-cov-2
 gzip sars-cov-2
 ls -l sars-cov-2.gz
