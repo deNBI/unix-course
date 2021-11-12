@@ -2,7 +2,26 @@
 
 # Unix course – Introduction to basic Unix commands
 
-[[_TOC_]]
+* [Unix course – Introduction to basic Unix commands](#unix-course--introduction-to-basic-unix-commands)
+    * [List of commands](#list-of-commands)
+    * [Tutorial](#tutorial)
+        * [Part 1](#part-1)
+            * [01 - Accessing SimpleVM](#01---accessing-simplevm)
+            * [02 - Opening a terminal window](#02---opening-a-terminal-window)
+            * [03 - Creating a directory to work in](#03---creating-a-directory-to-work-in)
+            * [04 - Running a simple program](#04---running-a-simple-program)
+            * [05 - Running in background and saving output](#05---running-in-background-and-saving-output)
+            * [06 - Inspecting and terminating a running program](#06---inspecting-and-terminating-a-running-program)
+        * [Part 2](#part-2)
+            * [07 - Extracting data from text files](#07---extracting-data-from-text-files)
+            * [08 - Processing the extracted data](#08---processing-the-extracted-data)
+            * [09 - Downloading and compressing files](#09---downloading-and-compressing-files)
+            * [10 - Cleaning up](#10---cleaning-up)
+        * [Part 3: Advanced Concepts](#part-3-advanced-concepts)
+            * [11 - Edit files](#11---edit-files)
+    * [Questions and discussion](#questions-and-discussion)
+    * [Remarks for the presenter](#remarks-for-the-presenter)
+
 
 On Unix, every user has a unique user name. When they log onto the system, they are placed in a home directory, which is a portion of the disk space reserved just for them. When you log onto a Unix system, your main interface to the system is  called the Unix Shell. This is the program that presents you with the dollar sign (`$`) prompt. This prompt means that the shell is ready to accept your typed commands. It is often preceded by the user name as well as the current directory.
 
@@ -26,6 +45,7 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | &#10551; `-r`       | copy directory tree (**r**ecursively)                        |
 | `file` | determine file type |
 | `echo`              | print a line of text                                   |
+| `head`              | View the first 10 lines of a file |
 | `less`              | display contents of a file (press q to quit)                 |
 | `tail` | output the last part of a file |
 | &#10551; `-f` | **f**ollow appended data as the file grows |
@@ -47,6 +67,8 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | &#10551; `ugo+-rwx` | **u**ser (owner), **g**roup, **o**ther (world), add(**+**), remove(**-**), **r**ead, **w**rite, **e**xecute |
 | `./myprogram` | run the local executable file `myprogram` |
 | `sed 's/ab/cd'` | transform text, e. g. replace all occurrences of 'ab' with 'cd' |
+| `nano` | Command line text file editor | 
+| &#10551; `Ctrl-x`       | By using the key combination `Ctrl-x` in the editor, you can exit the editor and optionally save the file.|
 | `wget` | network downloader (downloads files from the Web) |
 | `gzip` | compress a file |
 | `gunzip` | uncompress a file |
@@ -72,7 +94,9 @@ This tutorial is based on the [tutorial](https://gitlab.ub.uni-bielefeld.de/denb
 The first two sections (01 and 02) describe how to access the CLUM 2021 environment for this tutorial.
 Participants need a web browser and an active ELIXIR account. 
 
-### 01 - Accessing SimpleVM
+### Part 1
+
+#### 01 - Accessing SimpleVM
 
 When accessing a Unix system running as a virtual machine in the cloud one would normally log into
 it via SSH and would be getting presented with a terminal.
@@ -83,6 +107,7 @@ Every participant has access to a prepared virtual machine running a web-based d
 
 This workshop is powered by [SimpleVM](https://cloud.denbi.de/simplevm/).
 Every participant should have received a mail containing the actual link to their VM.
+If you did not receive a mail containing a link to a VM, please contact your tutor.
 
 After successful login the Theia IDE screen appears. The screen is usually divided into 3 sections:
 Editor pane in the center, file browser on the left, terminal at the bottom.
@@ -91,7 +116,7 @@ This tutorial will primarily focus on the use of the terminal.
 > **Note:** Access to your own private virtual machine works different from what is used here. You would usually run an SSH client to connect to the machine using a key file and would then be presented with a single terminal command prompt, e.g.:
 > `ssh -i ~/.ssh/mykeyfile ubuntu@myprivatevm.example.com`
 
-### 02 - Opening a terminal window
+#### 02 - Opening a terminal window
 
 If not yet open go to -> _Terminal_ -> _new Terminal_ to open a new terminal.
 
@@ -99,7 +124,7 @@ If not yet open go to -> _Terminal_ -> _new Terminal_ to open a new terminal.
 
 It is possible to have more than one terminal open at the same time.
 
-### 03 - Creating a directory to work in
+#### 03 - Creating a directory to work in
 
 <u>Tasks:</u>
 
@@ -117,7 +142,7 @@ cd pi_calculation
 pwd
 </code></pre></details>
 
-### 04 - Running a simple program
+#### 04 - Running a simple program
 
 A simple program that (slowly) approximates the number pi is available as a file at `/opt/calculate_pi`.
 
@@ -136,7 +161,7 @@ chmod u+x calculate_pi
 ./calculate_pi
 </code></pre></details>
 
-### 05 - Running in background and saving output
+#### 05 - Running in background and saving output
 
 We would like to save the results of the pi calculation program to a file instead of just displaying them on the screen.
 
@@ -153,7 +178,7 @@ tail -f pi_results.txt
 # Ctrl+c
 </code></pre></details>
 
-### 06 - Inspecting and terminating a running program
+#### 06 - Inspecting and terminating a running program
 
 The pi approximation will probably run for about an hour but we would like to terminate it earlier.
 
@@ -175,7 +200,9 @@ ls -lh
 df -h .
 </code></pre></details>
 
-### 07 - Extracting data from text files
+### Part 2
+
+#### 07 - Extracting data from text files
 
 Let's extract adverbs from a list of English words available inside `/usr/share/dict/words`.
 
@@ -209,7 +236,7 @@ grep "ably$" /usr/share/dict/words > ably.txt
 wc ably.txt fully.txt ously.txt
 </code></pre></details>
 
-### 08 - Processing the extracted data
+#### 08 - Processing the extracted data
 
 1. Convert all the adverbs inside the three files from the previous section into adjectives. Name the resulting files `able.txt`, `ful.txt` and `ous.txt` _(3 commands)_
 
@@ -230,22 +257,22 @@ cat able.txt ful.txt ous.txt | sort > adjectives.sorted.txt
 less adjectives.sorted.txt
 </code></pre></details>
 
-### 09 - Downloading and compressing files
+#### 09 - Downloading and compressing files
 
 1. Please move to your home directory. *(1 command)*
 2. Now, download the file at https://tinyurl.com/sars-cov-2-seq to the current directory using a network downloader. *(1 command)*
 3. Take a look at the contents of the file. *(1 command)*
-4. The downloaded file is an uncompressed text file of 77 Kilobytes in size. Please apply compression to the file so that it takes less disk space and check the effectiveness of the compression. *(2 commands)*
+4. The downloaded file is an uncompressed text file of 30 Kilobytes in size. Please apply compression to the file so that it takes less disk space and check the effectiveness of the compression. *(2 commands)*
 
 <details><summary>Show solution</summary><pre><code>
 cd ~
 wget "https://tinyurl.com/sars-cov-2-seq"
-less sars-cov-2
-gzip sars-cov-2
-ls -l sars-cov-2.gz
+less sars-cov-2-seq
+gzip sars-cov-2-seq
+ls -l sars-cov-2-seq.gz
 </code></pre></details>
 
-### 10 - Cleaning up
+#### 10 - Cleaning up
 
 1. Please enter your home and list its contents. *(2 commands)*
 2. Please list the contents of the directory `fun_with_words` without moving into it. *(1 command)*
@@ -253,7 +280,8 @@ ls -l sars-cov-2.gz
 4. Delete the directory itself. *(1 command)*
 5. The directory `pi_calculation` has to be cleaned up as well. This time, delete directory and contents in one go. *(1 command)*
 6. Verify that both directories have been removed. *(1 command)*
-7. That's it! Congratulations! You have mastered the Unix command-line essentials!
+7. Remove the compressed text file. *(1 command)*
+8. That's it! Congratulations! You have mastered the Unix command-line essentials!
 
 <details><summary>Show solution</summary><pre><code>
 cd ~
@@ -263,10 +291,34 @@ rm fun_with_words/*
 rmdir fun_with_words
 rm -r pi_calculation
 ls
+rm sars-cov-2-seq.gz
 </code></pre></details>
 
+### Part 3: Advanced Concepts
 
-### Questions and discussion
+#### 11 - Edit files
+
+Instead of using a graphical user interface for editing files,
+you can directly manipulate files on the terminal.
+
+1. Please move to your home directory. *(1 command)*
+2. Download the sars-cov-2 genome again (https://tinyurl.com/sars-cov-2-seq). *(1 command)*
+3. Open the file in an editor. *(1 command)*
+4. Remove all characters from the first line with the exception of 
+the fasta id (>NC_045512.2). *(typing/removing text)*
+5. Save the file and exit the editor. *(1 key combination and 2 keys)*
+6. Output just the first 10 lines to ensure that the fasta header contains only the id now. *(1 command)*
+
+<details><summary>Show solution</summary><pre><code>
+cd ~
+wget "https://tinyurl.com/sars-cov-2-seq"
+nano sars-cov-2-seq
+# Moving the caret and pressing backspace to remove the characters
+# Ctrl+x, then type y to save the buffer and press enter to confirm the filename
+head sars-cov-2-seq
+</code></pre></details>
+
+## Questions and discussion
 
 If something is unclear or if you have further questions, do not hesitate to ask us.
 
