@@ -66,7 +66,7 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `chmod`             | change mode (security permissions) of file or directory      |
 | &#10551; `ugo+-rwx` | **u**ser (owner), **g**roup, **o**ther (world), add(**+**), remove(**-**), **r**ead, **w**rite, **e**xecute |
 | `./myprogram` | run the local executable file `myprogram` |
-| `sed 's/ab/cd'` | transform text, e. g. replace all occurrences of 'ab' with 'cd' |
+| `sed 's/ab/cd/'` | transform text, e. g. replace all occurrences of 'ab' with 'cd' |
 | `nano` | Command line text file editor | 
 | &#10551; `Ctrl-x`       | By using the key combination `Ctrl-x` in the editor, you can exit the editor and optionally save the file.|
 | `wget` | network downloader (downloads files from the Web) |
