@@ -105,7 +105,7 @@ Every participant has access to a prepared virtual machine running a web-based d
 
 **Accessing Theia IDE**
 
-This workshop is powered by [SimpleVM](https://cloud.denbi.de/simplevm/).
+This workshop is powered by [SimpleVM](https://cloud.denbi.de/about/project-types/simplevm/).
 Every participant should have received a mail containing the actual link to their VM.
 If you did not receive a mail containing a link to a VM, please contact your tutor.
 
