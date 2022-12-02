@@ -171,12 +171,13 @@ We would like to save the results of the pi calculation program to a file instea
 2. Open a second terminal and enter a command that allows you to watch the output lines being written to the results file. **Note:** Bear in mind that a new terminal always starts in your home directory. *(2 commands)*
 3. Stop following the results file. *(1 key combination)*
 
-<details><summary>Show solution</summary><pre><code>
-./calculate_pi > pi_results.txt
-cd pi_calculation
+<details><summary>Show solution</summary>
+In the first terminal, run:
+<pre><code>./calculate_pi > pi_results.txt</code></pre>
+Open a second terminal and run:
+<pre><code>cd pi_calculation
 tail -f pi_results.txt
-# Ctrl+c
-</code></pre></details>
+# Ctrl+c</code></pre></details>
 
 #### 06 - Inspecting and terminating a running program
 
