@@ -46,6 +46,7 @@ In addition, Unix extends the power of commands by using special flags or *switc
 | `file` | determine file type |
 | `echo`              | print a line of text                                   |
 | `head`              | View the first 10 lines of a file |
+| `sort`              | Sort lines of text files |
 | `less`              | display contents of a file (press q to quit)                 |
 | `tail` | output the last part of a file |
 | &#10551; `-f` | **f**ollow appended data as the file grows |
@@ -189,7 +190,7 @@ The pi approximation will probably run for about an hour but we would like to te
 3. Verify that the pi calculation has stopped. *(1 command or action)*
 4. Inspect the contents of the results file that the pi calculation has generated. *(1 command)*
 5. Check the file size of the results file. *(1 command)*
-6. Check the free disk space available in the current directory. *(1 command)*
+6. Check the free disk space available on your file system. *(1 command)*
 
 <details><summary>Show solution</summary><pre><code>
 ps -x
