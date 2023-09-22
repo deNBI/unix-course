@@ -127,6 +127,15 @@ It is possible to have more than one terminal open at the same time.
 
 #### 03 - Creating a directory to work in
 
+Before we actually start we will clode this github repository so we have all files in place we need for this small axercise:
+
+```
+cd
+git clone https://github.com/deNBI/unix-course.git
+```
+
+Then we can move on with the exercise.
+
 <u>Tasks:</u>
 
 1. Open the manual page of the command `pwd` by entering `man pwd`.
@@ -145,7 +154,7 @@ pwd
 
 #### 04 - Running a simple program
 
-A simple program that (slowly) approximates the number pi is available as a file at `/opt/calculate_pi`.
+A simple program that (slowly) approximates the number pi is available as a file at `~/unix-course/calculate_pi`.
 
 <u>Tasks:</u>
 
@@ -156,7 +165,7 @@ A simple program that (slowly) approximates the number pi is available as a file
 5. Stop the running program by pressing the key combination `Ctrl+c`.
 
 <details><summary>Show solution</summary><pre><code>
-cp /opt/calculate_pi .
+cp ~/unix-course/calculate_pi .
 file calculate_pi
 chmod u+x calculate_pi
 ./calculate_pi
@@ -206,6 +215,13 @@ df -h .
 #### 07 - Extracting data from text files
 
 Let's extract adverbs from a list of English words available inside `/usr/share/dict/words`.
+
+For this we need to install a small ubuntu package that contains english and german dictionary words.
+Installing packages in ubuntu is fairly easy and can be done using the `apt-get install` command. However, we need root priviliges to install a package for the whole system.
+This can be done by granting ourself root priviliges for the execution of one single command with `sudo`. 
+Please run the following command before we can proceed:
+
+`sudo apt-get install wamerican-small`
 
 <u>Tasks:</u>
 
