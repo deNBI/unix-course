@@ -127,7 +127,7 @@ It is possible to have more than one terminal open at the same time.
 
 #### 03 - Creating a directory to work in
 
-Before we actually start we will clode this github repository so we have all files in place we need for this small axercise:
+Before we actually start we will clode this github repository so we have all files in place we need for this small exercise:
 
 ```
 cd
@@ -340,10 +340,3 @@ head sars-cov-2-seq
 If something is unclear or if you have further questions, do not hesitate to ask us.
 
 ---
-
-## Remarks for the presenter
-
-Please make sure that 
-
-- `/opt/calculate_pi` is in place and not executable
-- the Ubuntu package `wamerican-small` is installed
