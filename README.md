@@ -127,14 +127,14 @@ It is possible to have more than one terminal open at the same time.
 
 #### 03 - Creating a directory to work in
 
-Before we actually start we will clode this github repository so we have all files in place we need for this small exercise:
+Before we actually start we will clone this github repository so we have all files in place we need for this small exercise:
 
 ```
 cd
 git clone https://github.com/deNBI/unix-course.git
 ```
-
-Then we can move on with the exercise.
+This will create the directory `unix-course` within your user's home directory.
+We can now move on with the exercise.
 
 <u>Tasks:</u>
 
