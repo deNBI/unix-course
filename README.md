@@ -92,7 +92,7 @@ During this tutorial you will use many of the **commands above**. Your task is t
 solution if absolutely necessary.
 
 This tutorial is based on the [tutorial](https://gitlab.ub.uni-bielefeld.de/denbi/unix-course) that was created by the de.NBI Cloud Bielefeld administrators.
-The first two sections (01 and 02) describe how to access the CLUM 2021 environment for this tutorial.
+The first two sections (01 and 02) describe how to access the workshop environment for this tutorial.
 Participants need a web browser and an active ELIXIR account. 
 
 ### Part 1
