@@ -284,9 +284,9 @@ less adjectives.sorted.txt
 <details><summary>Show solution</summary><pre><code>
 cd ~
 wget "https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta"
-less sars-cov-2-seq
-gzip sars-cov-2-seq
-ls -l sars-cov-2-seq.gz
+less seq.fasta
+gzip seq.fasta
+ls -l seq.fasta.gz
 </code></pre></details>
 
 #### 10 - Cleaning up
@@ -308,7 +308,7 @@ rm fun_with_words/*
 rmdir fun_with_words
 rm -r pi_calculation
 ls
-rm sars-cov-2-seq.gz
+rm seq.fasta.gz
 </code></pre></details>
 
 ### Part 3: Advanced Concepts
@@ -329,10 +329,10 @@ the fasta id (>NC_045512.2). *(typing/removing text)*
 <details><summary>Show solution</summary><pre><code>
 cd ~
 wget "https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta"
-nano sars-cov-2-seq
+nano seq.fasta
 # Moving the caret and pressing backspace to remove the characters
 # Ctrl+x, then type y to save the buffer and press enter to confirm the filename
-head sars-cov-2-seq
+head seq.fasta
 </code></pre></details>
 
 ## Questions and discussion
