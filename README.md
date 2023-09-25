@@ -277,7 +277,7 @@ less adjectives.sorted.txt
 #### 09 - Downloading and compressing files
 
 1. Please move to your home directory. *(1 command)*
-2. Now, download the file at [sars-cov-2-seq](https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta) to the current directory using a network downloader. *(1 command)*
+2. Now, download the file at [seqs.fasta](https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta) to the current directory using a network downloader. *(1 command)*
 3. Take a look at the contents of the file. *(1 command)*
 4. The downloaded file is an uncompressed text file of 30 Kilobytes in size. Please apply compression to the file so that it takes less disk space and check the effectiveness of the compression. *(2 commands)*
 
