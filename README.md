@@ -277,13 +277,13 @@ less adjectives.sorted.txt
 #### 09 - Downloading and compressing files
 
 1. Please move to your home directory. *(1 command)*
-2. Now, download the file at https://tinyurl.com/sars-cov-2-seq to the current directory using a network downloader. *(1 command)*
+2. Now, download the file at [sars-cov-2-seq](https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta) to the current directory using a network downloader. *(1 command)*
 3. Take a look at the contents of the file. *(1 command)*
 4. The downloaded file is an uncompressed text file of 30 Kilobytes in size. Please apply compression to the file so that it takes less disk space and check the effectiveness of the compression. *(2 commands)*
 
 <details><summary>Show solution</summary><pre><code>
 cd ~
-wget "https://tinyurl.com/sars-cov-2-seq"
+wget "https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta"
 less sars-cov-2-seq
 gzip sars-cov-2-seq
 ls -l sars-cov-2-seq.gz
@@ -319,7 +319,7 @@ Instead of using a graphical user interface for editing files,
 you can directly manipulate files on the terminal.
 
 1. Please move to your home directory. *(1 command)*
-2. Download the sars-cov-2 genome again (https://tinyurl.com/sars-cov-2-seq). *(1 command)*
+2. Download the sars-cov-2 genome again ([sars-cov-2-seq](https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta)). *(1 command)*
 3. Open the file in an editor. *(1 command)*
 4. Remove all characters from the first line with the exception of 
 the fasta id (>NC_045512.2). *(typing/removing text)*
@@ -328,7 +328,7 @@ the fasta id (>NC_045512.2). *(typing/removing text)*
 
 <details><summary>Show solution</summary><pre><code>
 cd ~
-wget "https://tinyurl.com/sars-cov-2-seq"
+wget "https://openstack.cebitec.uni-bielefeld.de:8080/unix-course/seq.fasta"
 nano sars-cov-2-seq
 # Moving the caret and pressing backspace to remove the characters
 # Ctrl+x, then type y to save the buffer and press enter to confirm the filename
