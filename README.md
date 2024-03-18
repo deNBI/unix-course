@@ -218,7 +218,7 @@ The pi approximation will probably run for about an hour but we would like to te
 
 <details><summary>Show solution</summary><pre><code>
 ps -x
-kill <id of the process>
+kill "<id of the process>"
 ps -x     # or look at the first terminal
 less pi_results.txt
 ls -lh
