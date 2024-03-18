@@ -102,26 +102,41 @@ Participants need a web browser and an active ELIXIR account.
 When accessing a Unix system running as a virtual machine in the cloud one would normally log into
 it via SSH and would be getting presented with a terminal.
 For the sake of this tutorial the access route to the terminal is via web browser.
-Every participant has access to a prepared virtual machine running a web-based development environment called Theia IDE.
+Every participant has access to a prepared virtual machine running a web-based remote desktop called Guacamole.
 
-**Accessing Theia IDE**
+**Accessing Guacamole**
 
 This workshop is powered by [SimpleVM](https://cloud.denbi.de/about/project-types/simplevm/).
 Every participant should have received a mail containing the actual link to their VM.
 If you did not receive a mail containing a link to a VM, please contact your tutor.
 
-After successful login the Theia IDE screen appears. The screen is usually divided into 3 sections:
-Editor pane in the center, file browser on the left, terminal at the bottom.
+After successful login the Guacamole remote desktop appears. 
+Passwort and username is "denbi".
+
+![Guacamole Login](images/guaca_login.png)
+
+Once logged in you can will see a screen that allows you to select the keyboard layout. 
+Please select the German keyboard layout.
+
+![Guacamole Connection](images/guaca_con.png)
+
 This tutorial will primarily focus on the use of the terminal.
 
-> **Note:** Access to your own private virtual machine works different from what is used here. You would usually run an SSH client to connect to the machine using a key file and would then be presented with a single terminal command prompt, e.g.:
-> `ssh -i ~/.ssh/mykeyfile ubuntu@myprivatevm.example.com`
+If guacamole is inactive for a certain period of time, you might see the following additional login screen.
+In this case, the password is `ogvkyf`.
+
+![Guacamole Ubuntu login](images/guaca_inactive.png)
+
+If you see the following window. Just click on "x" to close it.
+
+![Guacamole Window](images/guaca_auth.png)
 
 #### 02 - Opening a terminal window
 
-If not yet open go to -> _Terminal_ -> _new Terminal_ to open a new terminal.
+On the bottom of the following screen you should see a terminal icon.
+Once you have clicked on the icon, a terminal window should pop up.
 
-![Opening a terminal window](images/Terminal.png)
+![Guacmole Termina](images/guaca_screen.png)
 
 It is possible to have more than one terminal open at the same time.
 
